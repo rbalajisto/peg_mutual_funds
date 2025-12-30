@@ -153,10 +153,5 @@ if st.button("🚀 Run Analysis"):
     # ----------------- DISPLAY -----------------
     st.subheader("📈 Large Cap PEG Summary")
 
-    st.dataframe(
-        df.style
-        .background_gradient(cmap="RdYlGn_r", subset=["Forward PEG"])
-        .format({"Forward PEG": "{:.2f}"}),
-        use_container_width=True
-    )
+    
 
